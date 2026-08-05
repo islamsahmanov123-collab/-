@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Это мы ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Красивый шрифт -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+    <!-- Фоновая музыка -->
+    <audio id="music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Кнопка музыки -->
+    <button class="music-button" id="musicButton">
+        ♫ Включай Sunsetz
+    </button>
+
+    <!-- Главный экран -->
+    <section class="hero">
+
+        <div class="hearts">♡ ♡ ♡</div>
+
+        <h1>Мы</h1>
+
+        <p>
+            БРООО ❤️
+        </p>
+
+        <a href="#memories" class="main-button">
+            Посмотреть воспоминания
+        </a>
+
+    </section>
+
+
+    <!-- Воспоминания -->
+    <section class="memories" id="memories">
+
+        <h2>Вот мы дауны ✨</h2>
+
+        <p class="subtitle">
+            бебебе
+        </p>
+
+
+        <div class="cards">
+
+            <article class="card">
+
+                <img
+                    src="images/photo1.jpg"
+                    alt="Наше первое фото"
+                >
+
+                <div class="card-text">
+
+                    <span>01</span>
+
+                    <h3>Наша первая встреча</h3>
+
+                    <p>
+                        к сожалению мы в тот день не фоткались, но я нашел фотку с шляпой
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    src="images/photo2.jpg"
+                    alt=""
+                >
+
+                <div class="card-text">
+
+                    <span>02</span>
+
+                    <h3>Наши прогулки</h3>
+
+                    <p>
+                        ебени
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    src="images/photo3.jpg"
+                    alt="Счастливый момент"
+                >
+
+                <div class="card-text">
+
+                    <span>03</span>
+
+                    <h3>Самые счастливые моменты</h3>
+
+                    <p>
+                        твоя улыбка чотки
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="card">
+
+                <img
+                    src="images/photo4.jpg"
+                    alt="Мы вместе"
+                >
+
+                <div class="card-text">
+
+                    <span>04</span>
+
+                    <h3>И это только начало</h3>
+
+                    <p>
+                        Я хочу создать с тобой
+                        ещё много воспоминаний.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- Письмо -->
+    <section class="letter">
+
+        <div class="letter-box">
+
+            <div class="small-heart">♥</div>
+
+            <h2>Небольшое письмо тебе</h2>
+
+            <p>
+                Спасибо тебе за все моменты,
+                которые мы уже пережили вместе.
+            </p>
+
+            <p>
+                За улыбки, разговоры,
+                поддержку и за то,
+                что рядом с тобой
+                обычные дни становятся особенными.
+            </p>
+
+            <p>
+                Я не знаю, что ждёт нас дальше,
+                но знаю, что хочу,
+                чтобы в моей истории
+                было ещё много страниц с тобой.
+            </p>
+
+            <h3>
+                С любовью ❤️
+            </h3>
+
+        </div>
+
+    </section>
+
+
+    <!-- Конец -->
+    <footer>
+
+        <p>
+            Сделано специально для тебя ♡
+        </p>
+
+        <div>
+            люблютебяброу
+           
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        const music = document.getElementById("music");
+        const button = document.getElementById("musicButton");
+
+        let isPlaying = false;
+
+        button.addEventListener("click", function () {
+
+            if (isPlaying) {
+
+                music.pause();
+
+                button.textContent =
+                    "♫ Включить Sunsetz";
+
+                isPlaying = false;
+
+            } else {
+
+                music.play();
+
+                button.textContent =
+                    "❚❚ Поставить на паузу";
+
+                isPlaying = true;
+
+            }
+
+        });
+
+    </script>
+
+</body>
+</html>

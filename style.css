@@ -1,0 +1,517 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #fff7f8;
+
+    color: #3d3034;
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    overflow-x: hidden;
+}
+
+
+/* Главный экран */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+
+    linear-gradient(
+        rgba(30, 15, 25, 0.45),
+        rgba(255, 150, 170, 0.25)
+    ),
+
+    url("images/photo1.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+
+.hearts {
+
+    font-size: 35px;
+
+    letter-spacing: 15px;
+
+    margin-bottom: 20px;
+
+    animation: floating 3s infinite;
+}
+
+
+.hero h1 {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 100px;
+
+    font-weight: normal;
+
+    text-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.4);
+}
+
+
+.hero p {
+
+    max-width: 650px;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    margin-top: 15px;
+}
+
+
+.main-button {
+
+    margin-top: 35px;
+
+    padding:
+        16px
+        30px;
+
+    border-radius: 50px;
+
+    background: white;
+
+    color: #c85d76;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+
+.main-button:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+/* Музыка */
+
+.music-button {
+
+    position: fixed;
+
+    top: 20px;
+
+    right: 20px;
+
+    z-index: 100;
+
+    border: none;
+
+    padding:
+        13px
+        20px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(255, 255, 255, 0.85);
+
+    color: #b94c69;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.15);
+
+    backdrop-filter:
+        blur(10px);
+}
+
+
+/* Воспоминания */
+
+.memories {
+
+    padding:
+        110px
+        10%;
+}
+
+
+.memories h2 {
+
+    text-align: center;
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 65px;
+
+    color: #c65a75;
+}
+
+
+.subtitle {
+
+    text-align: center;
+
+    margin-top: 10px;
+
+    color: #78656b;
+}
+
+
+.cards {
+
+    max-width: 1000px;
+
+    margin:
+        70px auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            1fr
+        );
+
+    gap: 35px;
+}
+
+
+.card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow:
+
+        0 15px 40px
+
+        rgba(
+            170,
+            80,
+            100,
+            0.13
+        );
+
+    transition: 0.4s;
+}
+
+
+.card:hover {
+
+    transform:
+        translateY(-10px);
+}
+
+
+.card img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: cover;
+}
+
+
+.card-text {
+
+    padding: 30px;
+}
+
+
+.card-text span {
+
+    color: #dc8195;
+
+    font-weight: bold;
+}
+
+
+.card h3 {
+
+    margin:
+        10px 0;
+
+    font-size: 22px;
+}
+
+
+.card p {
+
+    line-height: 1.7;
+
+    color: #76666b;
+}
+
+
+/* Письмо */
+
+.letter {
+
+    padding:
+        100px
+        20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #f8dce3,
+            #fff6f7
+        );
+}
+
+
+.letter-box {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    padding:
+        70px;
+
+    background:
+        rgba(
+            255,
+            255,
+            255,
+            0.85
+        );
+
+    border-radius: 30px;
+
+    text-align: center;
+
+    box-shadow:
+
+        0 20px 60px
+
+        rgba(
+            160,
+            70,
+            90,
+            0.15
+        );
+}
+
+
+.small-heart {
+
+    font-size: 35px;
+
+    color: #d45e7a;
+}
+
+
+.letter h2 {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 55px;
+
+    color: #c55874;
+
+    margin:
+        10px 0
+        30px;
+}
+
+
+.letter p {
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+
+    color: #604e54;
+}
+
+
+.letter h3 {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 40px;
+
+    color: #c55874;
+
+    font-weight: normal;
+}
+
+
+/* Подвал */
+
+footer {
+
+    padding:
+        60px
+        20px;
+
+    background: #33252a;
+
+    color: white;
+
+    text-align: center;
+}
+
+
+footer p {
+
+    font-family:
+        "Great Vibes",
+        cursive;
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+}
+
+
+footer div {
+
+    color: #d9bfc6;
+}
+
+
+/* Анимация */
+
+@keyframes floating {
+
+    0% {
+
+        transform:
+            translateY(0);
+
+    }
+
+    50% {
+
+        transform:
+            translateY(-12px);
+
+    }
+
+    100% {
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+/* Телефоны */
+
+@media (
+    max-width: 700px
+) {
+
+    .hero h1 {
+
+        font-size: 70px;
+
+    }
+
+
+    .hero p {
+
+        font-size: 16px;
+
+    }
+
+
+    .cards {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .memories {
+
+        padding:
+            80px
+            20px;
+
+    }
+
+
+    .memories h2 {
+
+        font-size: 52px;
+
+    }
+
+
+    .letter-box {
+
+        padding:
+            40px
+            25px;
+
+    }
+
+
+    .letter h2 {
+
+        font-size: 45px;
+
+    }
+
+}
